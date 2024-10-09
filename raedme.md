@@ -73,5 +73,23 @@ graph TD</br>
     E --> F[Incrementar contador en 1]</br>
     F --> C</br>
     C -->|No| G[Fin]</br>
-9.  Solicitar la base y altura de un triangulo e imprimir su area
-10.  
+9.  Solicitar la base y altura de un triangulo e imprimir su area </br>
+graph TD</br>
+    A[Inicio] --> B[Solicitar base del triángulo]</br>
+    B --> C[Solicitar altura del triángulo]</br>
+    C --> D[Calcular área: área = (base * altura) / 2]</br></br>
+    D --> E[Imprimir área del triángulo]</br>
+    E --> F[Fin]</br>
+10. Imprimir si el valor de una suma es positivo, negativo o igual a cero</br>
+graph TD</br>
+    A[Inicio] --> B[Leer número 1]</br>
+    B --> C[Leer número 2]</br>
+    C --> D[Calcular suma = número 1 + número 2]</br>
+    D --> E{¿Suma > 0?}</br>
+    E -->|Sí| F[Imprimir "La suma es positiva"]</br>
+    E -->|No| G{¿Suma < 0?}</br>
+    G -->|Sí| H[Imprimir "La suma es negativa"]</br>
+    G -->|No| I[Imprimir "La suma es igual a cero"] </br></br>
+    F --> J[Fin]</br>
+    H --> J</br>
+    I --> J</br>
